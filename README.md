@@ -22,7 +22,7 @@ Higher number produces slower acceleration.
 ```       
 content
 ```
-Default: null
+Default: ```""```
 A jQuery selector or an element that becomes zoomable/pannable. 
 If no selector is provided, the first child of the plugin element is selected.
 
