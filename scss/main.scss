@@ -1,0 +1,57 @@
+@mixin prefix ($property, $value, $prefixValue:false) {
+    $prefixes: -o-, -ms-, -moz-, -webkit-;
+    #{$property}: $value;
+    @each $prefix in $prefixes {
+        #{$prefix}#{$property}: if($prefixValue, $prefix + $value, $value);
+    }
+}
+
+html,
+body {
+    background-color: lightgray;
+    margin: 0;
+    padding: 0;
+}
+
+.zoom3d {
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    .content {
+        /* Plugin styles */
+        @include prefix(transform, translate3d(0, 0, 0));
+        @include prefix(transform-origin, 0 0 0);
+        @include prefix(transition, transform 200ms cubic-bezier(0.33, 0.66, 0.66,1), true);
+        @include prefix(user-drag, none);
+        @include prefix(user-select, none);
+        position: absolute;
+        
+        /* Optional styles */
+        background-color: white;
+        box-shadow: 0 0 20px rgba(black, 0.5);
+        box-sizing: border-box;
+        font-size: 12pt;
+        height: 29.7cm;
+        line-height: 16pt;
+        padding: 4cm;
+        text-align: justify;
+        text-indent: 24pt;
+        width: 21cm;
+        font-family: serif;
+    }
+    &:after {
+        background-color: rgba(black, 0.5);
+        border-radius: 1em;
+        color: white;
+        content: attr(data-scale);
+        font-family: sans-serif;
+        left: 20px;
+        line-height: 1em;
+        padding: 0.5em 1em;
+        position: fixed;
+        top: 20px;
+    }
+}
