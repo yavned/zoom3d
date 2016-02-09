@@ -16,48 +16,40 @@ $(function () {
 ```
 accelerationRatio
 ```
-Default: 0.0005
-Higher number produces slower acceleration. 
+Default: ```0.0005```. Higher number produces slower acceleration. 
      
 ```       
 content
 ```
-Default: null
-A jQuery selector or an element that becomes zoomable/pannable. 
+Default: ```""```. A jQuery selector or an element that becomes zoomable/pannable. 
 If no selector is provided, the first child of the plugin element is selected.
 
 ```
 doubleClickTime
 ```
-Default: 200
-Maximum time between two touchend events required for a double tap to occur.
+Default: ```200```. Maximum time between two touchend events required for a double tap to occur.
 
 ```
 dragLimit
 ```
-Default: 100
-The limit within which the content can be dragged out of the borders of its parent.
+Default: ```100```. The limit within which the content can be dragged out of the borders of its parent.
        
 ``` 
 maxScale
 ```
-Default: 2
-Maximum scale.
+Default: ```2```. Maximum scale.
 
 ```
 midScale
 ```
-Default: 1
-Medium scale. Used after a double tap.
+Default: ```1```. Medium scale. Used after a double tap.
 
 ```
 momentumTime
 ```
-Default: 200
-Maximum time between touchstart and touchend events required for momentum panning to occur.
+Default: ```200```. Maximum time between touchstart and touchend events required for momentum panning to occur.
 
 ```
 onResize
 ``` 
-Default: none
 The function called when the content scale changes. The function is passed the scale.
