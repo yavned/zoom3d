@@ -32,9 +32,9 @@ Maximum time in milliseconds between two touchend events required for a double t
 Default: ```200```
 
 ```
-dragLimit
+bounceLimit
 ```
-The limit in pixels within which the content can be dragged out of the borders of its parent. 
+The distance in pixels within which the content can exceed its limits before it bounces back. 
 Default: ```100```
        
 ``` 

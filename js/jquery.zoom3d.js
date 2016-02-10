@@ -29,7 +29,7 @@
             accelerationRatio: 0.0005,
             content: "", 
             doubleClickTime: 200,
-            dragLimit: 100,
+            bounceLimit: 100,
             maxScale: 2,
             midScale: 1,
             momentumTime: 200,
@@ -290,8 +290,8 @@
         
         // This is built on the premise that minVal is always less than 0, 
         // and maxVal is always greater than 0
-        var minDelta = minVal - this.options.dragLimit - startVal;
-        var maxDelta = maxVal + this.options.dragLimit - startVal; 
+        var minDelta = minVal - this.options.bounceLimit - startVal;
+        var maxDelta = maxVal + this.options.bounceLimit - startVal; 
         
         // Adjust delta and time for out-of-boundary values
         if (delta < minDelta || delta > maxDelta) {
