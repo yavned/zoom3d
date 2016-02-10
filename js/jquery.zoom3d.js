@@ -394,8 +394,8 @@
             webkitTransform: transform
         });
         
-        if (this.options.onResize && typeof this.options.onResize === "function") {
-            this.options.onResize(this.scale);
+        if (this.options.onScale && typeof this.options.onScale === "function") {
+            this.options.onScale(this.scale);
         }
     };
     

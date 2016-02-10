@@ -74,8 +74,8 @@
                 $(".zoom3d").zoom3d({
                     content: ".content",
                     translate3d: true,
-                    onResize: function (scale) {
-                        $(".zoom3d").attr("data-scale", ("Scale: " + scale.toFixed(2) + "%"));
+                    onScale: function (scale) {
+                        $(".zoom3d").attr("data-scale", ("Scale: " + Math.round(scale * 100) + "%"));
                     }
                 });
             });

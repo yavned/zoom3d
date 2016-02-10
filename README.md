@@ -54,6 +54,6 @@ Maximum time between touchstart and touchend events required for momentum pannin
 Default: ```200```
 
 ```
-onResize
+onScale
 ``` 
 The function called when the content scale changes. The function is passed the scale.
