@@ -28,13 +28,13 @@ Default: ```""```
 ```
 doubleClickTime
 ```
-Maximum time between two touchend events required for a double tap to occur. 
+Maximum time in milliseconds between two touchend events required for a double tap to occur. 
 Default: ```200```
 
 ```
 dragLimit
 ```
-The limit within which the content can be dragged out of the borders of its parent. 
+The limit in pixels within which the content can be dragged out of the borders of its parent. 
 Default: ```100```
        
 ``` 
