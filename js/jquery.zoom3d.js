@@ -33,7 +33,7 @@
             maxScale: 2,
             midScale: 1,
             momentumTime: 200,
-            t3d: false
+            translate3d: false
         };
 
     // The actual plugin constructor
