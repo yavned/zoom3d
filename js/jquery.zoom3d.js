@@ -316,7 +316,7 @@
         this.scale = this.minScale = elementRatio > contentRatio ? 
                                      elementHeight / contentHeight : 
                                      elementWidth / contentWidth;
-                    
+
         this.update();
     };
     
@@ -385,10 +385,10 @@
     
     Plugin.prototype.transform = function () {
         var transform = (this.options.translate3d ? "translate3d(" : "translate(") +
-                        this.x + "px," + 
-                        this.y + "px" +    
+                        this.x.toFixed(2) + "px," + 
+                        this.y.toFixed(2) + "px" +    
                         (this.options.translate3d ? ",0) " : ") ") + 
-                        "scale(" + this.scale + ")";
+                        "scale(" + this.scale.toFixed(2) + ")";
         
         $(this.content).css({
             transform: transform,

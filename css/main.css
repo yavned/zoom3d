@@ -10,7 +10,21 @@ body {
   overflow: hidden;
   position: absolute;
   top: 0;
-  width: 100%; }
+  width: 100%;
+  /*
+  &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      background-color: cyan;
+      border: 2px solid red;
+      box-sizing: border-box;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+  }
+  */ }
   .zoom3d .content {
     /* Plugin styles */
     transform: translate3d(0, 0, 0);
