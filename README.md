@@ -34,7 +34,7 @@ Default: ```200```
 ```
 bounceLimit
 ```
-The distance in pixels within which the content can exceed its limits before it bounces back. 
+The distance in pixels within which the content can exceed its parent before it bounces back. 
 Default: ```100```
        
 ``` 
