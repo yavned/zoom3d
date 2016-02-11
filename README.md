@@ -1,3 +1,5 @@
+###About
+
 Zoom3d is a jQuery plugin for native-like momentum panning and zooming in mobile browsers.
 
 ###Usage
@@ -21,7 +23,7 @@ Higher number produces slower acceleration. Default: ```0.0005```
 ```       
 content
 ```
-A jQuery selector or an element that becomes zoomable/pannable. 
+jQuery selector or an element that becomes zoomable/pannable. 
 If no selector is provided, the first child of the plugin element is selected. 
 Default: ```""```
 
@@ -34,7 +36,7 @@ Default: ```200```
 ```
 bounceLimit
 ```
-The distance in pixels within which the content can exceed its parent before it bounces back. 
+Distance in pixels within which the content can exceed its parent before it bounces back. 
 Default: ```100```
        
 ``` 
@@ -56,4 +58,4 @@ Default: ```200```
 ```
 onScale
 ``` 
-The function called when the content scale changes. The function is passed the scale.
+Function called when the content scale changes. The function is passed the scale.
