@@ -33,7 +33,7 @@
             maxScale: 2,
             midScale: 1,
             momentumTime: 200,
-            translate3d: false
+            t3d: false
         };
 
     // The actual plugin constructor
@@ -384,10 +384,11 @@
     };
     
     Plugin.prototype.transform = function () {
-        var transform = this.options.translate3d ? "translate3d" : "translate";
-        transform += "(" + this.x + "px," + this.y + "px";     
-        transform += this.options.translate3d ? ",0)" : ")";
-        transform += " scale(" + this.scale + ")";
+        var transform = (this.options.translate3d ? "translate3d(" : "translate(") +
+                        this.x + "px," + 
+                        this.y + "px" +    
+                        (this.options.translate3d ? ",0) " : ") ") + 
+                        "scale(" + this.scale + ")";
         
         $(this.content).css({
             transform: transform,

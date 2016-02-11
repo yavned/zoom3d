@@ -30,13 +30,15 @@ Default: ```""```
 ```
 doubleClickTime
 ```
-Maximum time in milliseconds between two touchend events required for a double tap to occur. 
+Maximum time in milliseconds between two touchend events required for a double 
+tap to occur. 
 Default: ```200```
 
 ```
 bounceLimit
 ```
-Distance in pixels within which the content can exceed its parent before it bounces back. 
+Distance in pixels within which the content can exceed its parent before it 
+bounces back. 
 Default: ```100```
        
 ``` 
@@ -52,10 +54,18 @@ Medium scale. Used after a double tap. Default: ```1```
 ```
 momentumTime
 ```
-Maximum time between touchstart and touchend events required for momentum panning to occur.
+Maximum time between touchstart and touchend events required for momentum 
+panning to occur.
 Default: ```200```
+
+```
+translate3d
+```
+Boolean. When ```true```, the plugin uses 3d transforms to help software 
+acceleration. Default: ```false```
 
 ```
 onScale
 ``` 
-Function called when the content scale changes. The function is passed the scale.
+Function called when the content scale changes. The function is passed the 
+scale.
