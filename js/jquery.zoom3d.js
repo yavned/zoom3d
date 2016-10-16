@@ -143,13 +143,14 @@
 
         var touches = event.originalEvent.touches;
 
-        // Ignore if it's a gesture
+        // If it's a two-finger gesture, get its center point
         if (this.touchEnabled && touches.length > 1) {
-            return false;
+            this.gestureX = Math.abs(touches[0].pageX + touches[1].pageX) / 2;
+            this.gestureY = Math.abs(touches[0].pageY + touches[1].pageY) / 2;
         }
 
-        var pageX = this.touchEnabled ? touches[0].pageX : event.pageX;
-        var pageY = this.touchEnabled ? touches[0].pageY : event.pageY;
+        var pageX = this.touchEnabled ? (touches.length > 1 ? this.gestureX : touches[0].pageX) : event.pageX;
+        var pageY = this.touchEnabled ? (touches.length > 1 ? this.gestureY : touches[0].pageY) : event.pageY;
 
         var deltaX = pageX - this.touchX;
         var deltaY = pageY - this.touchY;
