@@ -13,33 +13,33 @@ body {
     padding: 0;
 }
 
-.zoom3d {
-    height: 100%;
+#zoom3d {
+    top: 0;
+    bottom: 0;
     left: 0;
+    right: 0;
     overflow: hidden;
     position: absolute;
-    top: 0;
-    width: 100%;
-    .content {
+    #content {
         /* Plugin styles */
         @include prefix(transform, translate3d(0, 0, 0));
         @include prefix(transform-origin, 0 0 0);
-        @include prefix(transition, transform 200ms cubic-bezier(0.33, 0.66, 0.66,1), true);
+        @include prefix(transition, transform 200ms cubic-bezier(0.33, 0.66, 0.66, 1), true);
         @include prefix(user-drag, none);
         @include prefix(user-select, none);
         position: absolute;
-        
+
         /* Optional styles */
         background-color: white;
-        box-shadow: 0 0 20px rgba(black, 0.5);
+        box-shadow: 0 0 40px rgba(black, 0.5);
         box-sizing: border-box;
-        font-size: 12pt;
-        height: 29.7cm;
-        line-height: 16pt;
-        padding: 4cm;
+        font-size: 18px;
+        height: 1024px;
+        line-height: 1.25em;
+        padding: 4em;
         text-align: justify;
-        text-indent: 24pt;
-        width: 21cm;
+        text-indent: 2em;
+        width: 724px;
         font-family: serif;
     }
     &:after {
@@ -48,6 +48,7 @@ body {
         color: white;
         content: attr(data-scale);
         font-family: sans-serif;
+        font-size: 18px;
         left: 20px;
         line-height: 1em;
         padding: 0.5em 1em;
