@@ -37,7 +37,7 @@ tap to occur.
 Default: ```200```.
 
 ```
-bounceLimit
+dragLimit
 ```
 Maximum distance in pixels by which the content can be dragged/swiped past the boundaries of its parent.
 Default: ```100```.
