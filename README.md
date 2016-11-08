@@ -39,8 +39,7 @@ Default: ```200```.
 ```
 bounceLimit
 ```
-Distance in pixels within which the content can exceed its parent before it
-bounces back.
+Maximum distance in pixels by which the content can be dragged/swiped past the boundaries of its parent.
 Default: ```100```.
 
 ```
