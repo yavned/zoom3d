@@ -1,10 +1,10 @@
-#Zoom3d
+# Zoom3d
 
-###About
+### About
 
 Zoom3d is a jQuery plugin for native-like momentum panning and zooming in mobile browsers.
 
-###Usage
+### Usage
 
 ```javascript
 $(function () {
@@ -15,7 +15,7 @@ $(function () {
 });
 ```
 
-###Plugin options
+### Plugin options
 
 ```
 accelerationRatio
